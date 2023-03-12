@@ -20,13 +20,13 @@ resource "aws_instance" "web" {
 
 
 
-#terraform {
-#  backend "s3" {
-#    bucket = "learnbuckets3"
-#    key    = "05-remote-state/terraform.tfstate"
-#    region = "us-east-1"
-#  }
-#}
+terraform {
+  backend "s3" {
+    bucket = "learnbuckets3"
+    key    = "05-remote-state/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
 
 #resource "aws_security_group" "allow_tls" {
 #  name        = "allow_tls"
